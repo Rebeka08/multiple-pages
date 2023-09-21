@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background-image: linear-gradient( -315deg, rgb(244, 248, 244), rgb(130, 159, 159) 65%,#77797c 50%);;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:  sans-serif;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+/********************** global css stsrt******************/
+.container{
+    width: 100%;
+    margin: auto;
+}
+.row{
+    width: 100%;
+    float: left;
+}    
+.col-lg-12{
+    width: 100%;
+    float: left;
+}
+.col-lg-9{
+    width: 75%;
+    float: left;
+}
+.col-lg-6{
+        width: 50%;
+        float: left;
+}
+.col-lg-4{
+    width: 33.3%;
+    float: left;
+}
+.col-lg-3{
+    width: 25%;
+    float: left;
+}
+
+
+/********************** global css end*******************/
+
+/********************header start here******************** */
+.header{
+    width: 100%;
+    float: left;
+    padding: 15px 0;
+    border-bottom: 1.5px solid #eee;
+    
+}
+.header img{
+    margin-left: 50px;
+}
+
+.navbar
+{
+    list-style-type: none;
+    float: right;
+    text-align: right;
+    margin-right: 50px;
+   
+  
+}
+.navbar li{
+    display: inline-block;   
+    padding: 14px 16px;
+   
+   
+}
+.navbar li a{
+    font-size: 18px;
+    font-weight: 500;
+    color:#f4f6f9;
+    transition: .5s;
+    
+}
+.navbar li a:hover, .navbar li a:focus{
+    color: #008AFF;
+}
+
+/********************header end here******************** */
+
+/********************banner start here******************** */
+.banner{
+   width: 100%;
+   float: left;
+   text-align: justify;
+   margin: 0 auto;
+   padding: 50px ;
+   
+}
+.banner.content{
+    float: left;
+   
+   
+      }
+.banner h2{
+    font-size: 35px;
+    line-height: 45px;  
+    color:#0F2656;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.banner h1{
+    font-size: 45px;
+    line-height: 55px; 
+    color:#0F2656;
+    margin-left: 50px;
+   
+} 
+   .banner h3{
+    font-size: 25px;
+    line-height: 35px;
+    color:#0F2656;
+    margin-left: 50px;
+}
+.banner p{
+    font-size: 16px;
+    color:#0F2656;
+    line-height: 26px;
+    margin-left: 50px;
+}
+button{
+    width: 200px;
+    margin: 50px;
+    padding: 5px 0;  
+    box-shadow:  rgba(8, 44, 14, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    background: transparent;
+    color:  rgb(13, 9, 76);
+    font-size: 18px;
+    line-height: 28PX;
+    position: relative;  
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    background: #fff;
+
+    
+}
+span{
+    width:0% ;
+    height: 100% ;
+    bottom: 0;
+    left:0 ;
+    position:absolute ;
+    border-radius:30PX ;
+    background: linear-gradient(135deg, #021336 15%, rgb(57, 228, 228) 65%, white 50%);
+    
+   transition: 0.5S;
+   z-index: -1;
+ 
+
+}
+ button:hover span{
+    width: 100%;
+}
+.banner img{
+    float: right;
+    padding:0 20px ;
+    width: 600px;
+    
+   
+}
+
+
+

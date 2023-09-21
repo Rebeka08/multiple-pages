@@ -1,0 +1,269 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:  sans-serif;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+/********************** global css stsrt******************/
+.container{
+    width: 100%;
+    margin: auto;
+}
+.row{
+    width: 100%;
+    float: left;
+}    
+.col-lg-12{
+    width: 100%;
+    float: left;
+}
+.col-lg-9{
+    width: 100%;
+    float: left;
+}
+.col-lg-6{
+        width: 50%;
+        float: left;
+}
+.col-lg-4{
+    width: 33.3%;
+    float: left;
+}
+.col-lg-3{
+    width: 25%;
+    float: left;
+}
+
+
+/********************** global css end*******************/
+
+/********************header start here******************** */
+.header{
+    width: 100%;
+    float: left;
+    padding: 15px 0;
+    border-bottom: 1.5px solid #eee;
+    
+}
+.header img{
+    margin-left: 50px;
+}
+
+.navbar
+{
+    list-style-type: none;
+    float: right;
+    text-align: right;
+    margin-right: 50px;
+   
+  
+}
+.navbar li{
+    display: inline-block;   
+    padding: 14px 16px;
+   
+   
+}
+.navbar li a{
+    font-size: 18px;
+    font-weight: 500;
+    color:#0F2656;
+    transition: .5s;
+    
+}
+.navbar li a:hover, .navbar li a:focus{
+    color: #008AFF;
+}
+
+
+
+
+/********************header end here******************** */
+
+
+input{
+    display:none;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    margin: 40px 0;
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: brown;
+    bottom:-10px ;
+    left: 50%;
+    transform: translate(-50%);
+    animation: animate 4s infinite;
+
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+        background-color: tomato;
+    }
+    50%{
+        width:200px ;
+        background-color: rgb(9, 186, 239);
+    }
+    100%{
+        width: 100px;
+       background-color: rgb(8, 253, 8);
+    }
+}
+
+.top-container{
+    background-color: lightgray;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+h3{
+    background-color: rgb(188, 180, 180);
+    line-height:50px ;
+    padding: 0 50px;
+    color:white ;
+    border-radius: 10px;
+}
+label{
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    margin: 0 20px;
+    padding: 0px 10px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: .5s;
+
+}
+label:hover{
+    color: black;
+    background-color: rgb(188, 183, 183);
+    border-radius: 30px;
+    
+}
+.photo-gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+}
+.pic{
+    position: relative;
+    height: 230px;
+    border-radius:10px ;
+    box-shadow: 3px 3px 5px lightgray;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+    
+}
+  .pic::before{
+    content: "PHOTO GALLERY";
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%, -50%);
+    color:rgb(240, 233, 233);
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .2s; 
+    /* z-index: 1; */
+}  
+.pic::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    left:0;
+    height:0;
+    background-color:rgba(7, 7, 7, 0.4); 
+    border-radius: 10px;
+    transition: .3s;   
+}
+.pic:hover::after{
+    height: 100%;
+}
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+#check1:checked ~ .container .photo-gallery .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+#check2:checked ~ .container .photo-gallery .family{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+#check2:checked~.container.photo-gallery.child
+ #check2:checked~.container.photo-gallery.place{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
